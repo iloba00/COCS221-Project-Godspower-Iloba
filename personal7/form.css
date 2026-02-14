@@ -1,0 +1,84 @@
+form {
+  width: 90%;
+}
+
+fieldset {
+  width: 90%;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+input, select {
+  display: block;
+  position: relative;
+  left: 30%;
+  padding: 5px;
+  height: auto;
+  width: 60%;
+}
+
+label {
+  display: block;
+  position: absolute;
+  padding: 5px;
+  width: 30%;
+}
+
+input[type="radio"] {
+  display: inline;
+  position: inherit;
+  left: 0;
+  width: auto;
+}
+
+label.radio {
+  display: inline;
+  position: inherit;
+}
+
+input[type="submit"], input[type="reset"] {
+  display: block;
+  float: left;
+  left: 0;
+  text-align: center;
+  width: 40%;
+  padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  form {
+      width: 100%;
+      font-size: large;
+  }
+
+  fieldset {
+      width: 100%;
+      padding: 5px;
+      margin: 0;
+  }
+
+  input, select {
+      position: inherit;
+      display: block;
+      height: 50px;
+      padding: 5px;
+      width: 90%;
+  }
+
+  label {
+      position: inherit;
+      display: block;
+      height: 50px;
+      width: 90%;
+  }
+
+  input[type="submit"], input[type="reset"] {
+      float: none;
+      width: 90%;
+      margin: 10px;
+      font-size: 1.2em;
+  }
+}

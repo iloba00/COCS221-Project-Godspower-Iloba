@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Family of Iloba Godspower</title>
+    <link rel="stylesheet" href="personal.css"/>
+    <link rel="stylesheet" href="table.css"/>
+</head>
+<body>
+    <header>
+        <img src="headerimg.png" alt="Header with my initials" />
+        <nav>
+            <span class="navicon" onclick="toggleMenu()">☰</span>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li> 
+                <li><a href="vacation.html">Vacations</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    <main>
+        <h1>My Family</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Relationship</th>
+                    <th>Birthday</th>
+                    <th>Interesting Facts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Samuel Giveson</td>
+                    <td>Father</td>
+                    <td>January 15</td>
+                    <td>Enjoys fishing and cooking.</td>
+                </tr>
+                <tr>
+                    <td>Mary Josephine</td>
+                    <td>Mother</td>
+                    <td>February 20</td>
+                    <td>Loves painting and gardening.</td>
+                </tr>
+                <tr>
+                    <td>Sarah Jasmine</td>
+                    <td>Sister</td>
+                    <td>March 5</td>
+                    <td>Aspiring musician, plays the keyboard and loves playing visual games .</td>
+                </tr>
+                <tr>
+                    <td>Brandon</td>
+                    <td>Pet (Dog)</td>
+                    <td>April 10</td>
+                    <td>Likes to chase squirrels.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Family is everything!</td>
+                </tr>
+            </tfoot>
+        </table>
+       
+
+    </main>
+    </div>
+    <script src="https://cdn.rawgit.com/davidjbradshaw/image-map-resizer/master/js/imageMapResizer.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            imageMapResize(); 
+        });
+    </script>
+    
+    <div id="image_container">
+        <img src="familimage.png" usemap="#image-map" id="familyImage">
+        <map name="image-map">
+            <area target="_blank" alt="giveson" title="giveson" href="https://aa-fishing.com/fishing-organizations.html" coords="480,214,457,219,432,216,409,187,399,145,394,71,440,37,489,50,517,119,499,187,491,200" shape="poly">
+            <area target="_blank" alt="Josephine" title="Josephine" href="https://en.wikipedia.org/wiki/Painting" coords="282,161,87" shape="circle">
+            <area target="_blank" alt="Jasmine" title="Jasmine" href="https://www.youtube.com/watch?v=Iq7eMCV9Il0" coords="583,332,76" shape="circle">
+            <area target="_blank" alt="buddy" title="buddy" href="https://www.youtube.com/watch?v=S5a1efQvFNo" coords="259,537,327,609,373,626,456,526,428,487,374,448,303,471,279,495,263,510" shape="poly">
+        </map>
+    </div>
+    
+
+    <footer>
+      <p>&copy; 2024 Iloba Godspower | 
+      <a href="mailto:igodspower12257@ucumberlands.edu">igodspower12257@ucumberlands.edu</a><br>
+      This page is being constructed as part of the course requirement for ITSS232 @ UC.
+      </p>
+  </footer>
+   <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

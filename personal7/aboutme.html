@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me Iloba Godspower</title>
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <img src="headerimg.png" alt="Header with my initials" />
+        <nav>
+            <span class="navicon" onclick="toggleMenu()">☰</span>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li> 
+                <li><a href="vacation.html">Vacations</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About Me</h1>
+        <p>Hello! My name is Iloba Godspower, I love working with HTML, CSS, and I'm trying to get to understand JavaScript.</p>
+        <img src="pm.png" alt="My home town cultural festivals." class="responsive-img" />
+        <p>I am a member of the track and field team, which keeps me active and competitive.</p>
+        <p>Swimming, hiking, bass guitar playing, and listening to music are some of my favourite things to do.</p>
+        <p>These activities help me maintain a balance of emotions and state of mind in my daily life.</p>
+
+        <div style="clear:both;"></div>
+        <hr>
+        <h2>Contact Me</h2>
+
+       
+        <form method="POST" action="http://shearer.ksshosting.com/itss232/process.php">
+            <fieldset>
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address1">Address Line 1 (required):</label>
+                <input type="text" id="address1" name="address1" required>
+
+                <label for="address2">Address Line 2:</label>
+                <input type="text" id="address2" name="address2">
+
+                <label for="city">City (required):</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="state">State (required):</label>
+                <select id="state" name="state" required>
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AR">AR</option>	
+                    <option value="AZ">AZ</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DC">DC</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="IA">IA</option>	
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="MA">MA</option>
+                    <option value="MD">MD</option>
+                    <option value="ME">ME</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MO">MO</option>	
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="NC">NC</option>	
+                    <option value="NE">NE</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>			
+                    <option value="NV">NV</option>
+                    <option value="NY">NY</option>
+                    <option value="ND">ND</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VT">VT</option>
+                    <option value="VA">VA</option>
+                    <option value="WA">WA</option>
+                    <option value="WI">WI</option>	
+                    <option value="WV">WV</option>
+                    <option value="WY">WY</option>
+                </select>
+
+
+                <label for="zip">Zip (required):</label>
+                <input type="text" id="zip" name="zip" placeholder="nnnnn(-nnnn)" required pattern="\d{5}(-\d{4})?">
+
+                <label for="phone">Phone (required):</label>
+                <input type="tel" id="phone" name="phone" placeholder="(nnn) nnn-nnnn" required pattern="\(\d{3}\) \d{3}-\d{4}">
+
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="bdate">Birthdate (required):</label>
+                <input type="date" id="bdate" name="bdate" required>
+
+                <label for="referrer">Where did you hear about me?</label>
+                <select id="referrer" name="referrer" multiple>
+                    <option value="google">Google</option>
+                    <option value="bing">Bing</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="word">Word of Mouth</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label class="radio" for="recommend">Would you recommend this site to others?</label>
+                <input type="radio" id="recommend-yes" name="recommend" value="yes"> Yes
+                <input type="radio" id="recommend-no" name="recommend" value="no"> No
+
+                <label for="comments">Questions/Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <input type="submit" id="submit" name="submit" value="Submit">
+                <input type="reset" id="reset" name="reset" value="Reset">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Iloba Godspower | 
+        <a href="mailto:igodspower12257@ucumberlands.edu">igodspower12257@ucumberlands.edu</a><br>
+        This page is being constructed as part of the course requirement for ITSS232 @ UC.
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+

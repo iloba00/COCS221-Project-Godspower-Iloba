@@ -1,0 +1,73 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse; /* Ensures the table cells don't have extra spacing */
+}
+table th, table td {
+  padding: 10px; /* Add some padding for better spacing */
+  text-align: left; /* Align text to the left */
+  border: 1px solid black; /* Optional, if you want a border */
+}
+
+th, tfoot {
+  background-color: yellow;
+}
+
+header, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+
+  thead {
+    display: none;
+  }
+
+  table, table tr, table td {
+    display: block;
+    width: 100%;
+  }
+
+  table tbody tr {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8f8ff; 
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333; 
+  }
+  table td {
+    padding: 10px;
+    text-align: left;
+    border: none; 
+  }
+
+  table tbody tr:nth-child(odd) {
+    background-color: #ececfb; 
+  }
+
+  table tbody tr:nth-child(even) {
+    background-color: #f8f8ff; 
+  }
+
+table td:last-child {
+  padding-bottom: 15px;
+}
+
+  

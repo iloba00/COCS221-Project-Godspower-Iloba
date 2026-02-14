@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Educational History of Iloba Godspower</title>
+    <link rel="stylesheet" href="personal.css"/>
+    <link rel="stylesheet" href="video.css"/>
+</head>
+<body>
+    <header>
+        <img src="headerimg.png" alt="Header with my initials" />
+        <nav>
+            <span class="navicon" onclick="toggleMenu()">☰</span>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li> 
+                <li><a href="vacation.html">Vacations</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="pm.png" alt="My home town cultural festivals." />
+        <h2>Education History</h2>
+        <ul>
+            <li>University of the Cumberlands, Williamsburg, Kentucky, USA from [2023-present].</li>
+            <li>Osadenis High School, Asaba, Delta State, Nigeria from [2017-2023].</li>
+            <li>Eagles Nursery and Primary School, Asaba, Delta State, Nigeria from [2011-2017].</li>
+        </ul>
+        
+        <h2>Videos</h2>
+        <h3>University of the Cumberlands</h3>
+        <iframe width="800" height="450" 
+            src="https://www.youtube.com/embed/1jEDbLDHVFM" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Iloba Godspower | 
+      <a href="mailto:igodspower12257@ucumberlands.edu">igodspower12257@ucumberlands.edu</a><br>
+      This page is being constructed as part of the course requirement for ITSS232 @ UC.
+      </p>
+  </footer>
+  <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
